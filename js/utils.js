@@ -191,7 +191,7 @@ function renderMat(mat, selector) {
 // location such as: {i: 2, j: 7}
 function renderCell(location, value) {
     // Select the elCell and set the value
-    var elCell = document.querySelector(`.cell${location.i}-${location.j}`);
+    var elCell = document.querySelector(`.cell-${location.i}-${location.j}`);
     elCell.innerHTML = value;
 }
 
@@ -205,4 +205,21 @@ function createMat(ROWS, COLS) {
         mat.push(row)
     }
     return mat
+}
+
+function startTimer() {
+    gTimerOn = Date.now();
+    gMyTime = setInterval(timeCycle, 1);
+}
+
+function timeCycle() {
+    var time2 = Date.now();
+    var msTimeDiff = time2 - gTimerOn;
+    var timeDiffStr = new Date(msTimeDiff).toISOString().slice(17, -1);
+    document.querySelector('.timer span').innerHTML = timeDiffStr;
+}
+
+
+function stopTimer() {
+    clearInterval(gMyTime);
 }

@@ -6,14 +6,14 @@
     <title>Mine Sweeper</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
- <body onload="init()">
-    <button class = button onclick="boardSize(4)"> eazy</button>
-    <button class = button onclick="boardSize(8)"> Medium</button>
-    <button class = button onclick="boardSize(12)"> Hard</button>
-    <table>
-        <tbody class="board"></tbody>
-      </table>
-      <div class="buttons"><button class="restart">Restart</button></div>
+ <body onload="initGame()">
+  <div class="buttons"><button class="restart">Restart</button></div>
+  <table>
+    <tbody class="board"></tbody>
+  </table>
+  <button class = button onclick="gLevels(4)"> eazy</button>
+  <button class = button onclick="gLevels(8)"> Medium</button>
+  <button class = button onclick="gLevels(12)"> Hard</button>
       <h2>time: <span class="time"></span> </h2>
       <div class="boardContainer"></div>
 

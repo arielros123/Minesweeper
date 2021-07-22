@@ -6,8 +6,9 @@ body {
   }
   
   .button {
-    background-color:#334257;
+    background-color:#1fad5a;
     color: white;
+    
   }
   .cell {
     width: 35px;
@@ -31,8 +32,11 @@ body {
   }
 
   .board td {
+    background-color: #C6B4CE;
     width: 30px;
     height: 30px;
     text-align: center;
     transition: background-color 0.5s;
 }
+
+
