@@ -1,42 +1,28 @@
-body {
-  margin-left: 40% ;
-  margin-top: 10%;
-    background-color:#334257;
-    color: white;
-  }
-  
-  .button {
-    background-color:#1fad5a;
-    color: white;
-    
-  }
-  .cell {
-    width: 35px;
-    height: 35px;
-    text-align: center;
-  }
-  .cell img {
-    width: 25px;
-    height: auto;
-  }
-  .floor {
-    background-color: #C6B4CE;
-  }
-  .mine {
-    background-color: brown;
-  }
-  .board {
-    width: 50%;
-  margin-right: 25%;
-  margin-left: 25%;
-  }
-
-  .board td {
-    background-color: #C6B4CE;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    transition: background-color 0.5s;
+* {
+    box-sizing: border-box;
 }
 
+/* body {
+  margin-left: 40% ;
+    background-color:#8edd7f;
+    color: white;
+  } */
 
+table {
+  margin: 0 auto;
+  border :3px solid black ;
+  height: 550px;
+  width: 500px;
+  text-align: center;
+  }
+
+  .cell {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border :3px solid black ;
+
+  }
+
+  
+  
